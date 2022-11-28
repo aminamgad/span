@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>span</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Nerko+One&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Rubik+Microbe&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Rubik+Microbe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+ <!--   <div class="container">
+        <div class="spinBtn"></div>
+        <div class="wheel">
+            <div class="number" style="--i:1;
+            --clr:#db7093"><span>100</span></div>
+        <div class="number" style="--i:2;
+        --clr:#20b2aa"><span>1</span></div>
+        </div>
+            <div class="number" style="--i:3;
+            --clr:#d63e92"><span>50</span></div>
+        </div>
+        <div class="number" style="--i:4;
+        --clr:#daa520"><span>0</span></div>
+        </div>
+        <div class="number" style="--i:5;
+        --clr:#ff340f"><span>1000</span></div>
+        </div>
+        <div class="number" style="--i:6;
+        --clr:#ff7f50"><span>10</span></div>
+        </div>
+        <div class="number" style="--i:7;
+        --clr:#3cb371"><span>5</span></div>
+        </div>
+        <div class="number" style="--i:8;
+        --clr:#4169e1"><span>20</span></div>
+        
+        </div>
+        
+
+</div>-->
+
+<div class="contauner">
+    <h1>اسلام يبقي : </h1>
+    <div class="spinBtb">spin</div>
+    <div class="wheel">
+        <div class="number" style="--i:1;--clr:#db7093;"><span>حمار</span></div>
+        <div class="number" style="--i:2;--clr:#20b2aa;"><span>شاذ</span></div>
+        <div class="number" style="--i:3;--clr:#d63e92;"><span>مش تمام</span></div>
+        <div class="number" style="--i:4;--clr:#daa520;"><span> غبي</span></div>
+        <div class="number" style="--i:5;--clr:#ff340f;"><span>لطخ</span></div>
+        <div class="number" style="--i:6;--clr:#ff7f50;"><span>خمام</span></div>
+        <div class="number" style="--i:7;--clr:#3cb371;"><span>حرامي</span></div>
+        <div class="number" style="--i:8;--clr:#4169e1;"><span>لفتة</span></div>
+    </div>
+</div>
+<script>
+    let wheel = document.querySelector('.wheel');
+    let spinBtb = document.querySelector('.spinBtb');
+    let value = Math.ceil(Math.random() * 3600);
+    spinBtb.onclick = function(){
+        wheel.style.transform = "rotate("+ value +"deg)";
+        value += Math.ceil(Math.random() * 3600);
+    };
+</script>
+    
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> <!--install for icons-->
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
